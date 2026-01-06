@@ -1,41 +1,50 @@
 class Student:
-    def __init__(self, student_id, name, age):
+    def __init__(self, student_id, name, year):
         self.student_id = student_id
         self.name = name
-        self.age = age
+        self.year = year
 
     def __str__(self):
-        return f"ID: {self.student_id} | Name: {self.name} | Age: {self.age}"
+        return f"ID: {self.student_id} | Name: {self.name} | Year: {self.year}"
 
 
-students = []
+class StudentManager:
+    def __init__(self):
+        self.students = []
 
-def add_student():
-    student_id = input("Enter student ID: ")
-    name = input("Enter name: ")
-    age = int(input("Enter age: "))
-    students.append(Student(student_id, name, age))
+    def add_student(self, student_id, name, year):
+        student = Student(student_id, name, year)
+        self.students.append(student)
+        print("Student added successfully!")
 
-
-def show_students():
-    if not students:
-        print("Student list is empty.")
-    for s in students:
-        print(s)
+    def show_students(self):
+        if not self.students:
+            print("No students in the list.")
+            return
+        for s in self.students:
+            print(s)
 
 
 def main():
+    manager = StudentManager()
+
     while True:
-        print("\n1. Add student")
-        print("2. Show students")
+        print("\n=== STUDENT MANAGEMENT ===")
+        print("1. Add student")
+        print("2. Show all students")
         print("0. Exit")
-        choice = input("Choose: ")
+
+        choice = input("Choose an option: ")
 
         if choice == "1":
-            add_student()
+            sid = input("Student ID: ")
+            name = input("Name: ")
+            year = input("Year: ")
+            manager.add_student(sid, name, year)
         elif choice == "2":
-            show_students()
+            manager.show_students()
         elif choice == "0":
+            print("Goodbye!")
             break
         else:
             print("Invalid choice!")
