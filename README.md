@@ -1,21 +1,18 @@
 # Student Management System
 
-A simple student management project written in Python.  
-This project is created for learning GitHub and basic Python OOP.
+Simple student management project written in Python.
 
 ## Features
-- Create student objects
-- Display student information
-- Practice Python class and object
+- Add student
+- View student list
+- Find student by ID
+- Delete student by ID
+- Save data to CSV file
 
 ## Technologies
-- Python 3
+- Python
+- OOP
+- GitHub
 
-## How to run
-1. Clone this repository
-2. Run the file `student.py`
-
-```bash
-python student.py
-## Data storage
-Student data is stored in a CSV file.
+## Author
+Duy – HCMUTE
