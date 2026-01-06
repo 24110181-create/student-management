@@ -1,36 +1,19 @@
 # Student Management System
 
-A simple student management project written in Python.
-This project is used to practice GitHub, Git, and basic Python programming.
+A simple student management project written in Python.  
+This project is created for learning GitHub and basic Python OOP.
 
 ## Features
-- Add new students
-- Display student list
-- Search student by ID
-- Delete student
-- Simple command-line interface
+- Create student objects
+- Display student information
+- Practice Python class and object
 
 ## Technologies
 - Python 3
 
-## Author
-- Duy – HCMUTE
-- GitHub: https://github.com/duy-hcmute
-- # Python OOP Basic
+## How to run
+1. Clone this repository
+2. Run the file `student.py`
 
-This repository contains basic Object-Oriented Programming (OOP) exercises in Python.
-
-## Contents
-- Student class
-- Constructor (__init__)
-- Display information (__str__)
-- Simple student management using list
-
-## Purpose
-- Practice Python OOP
-- Practice Git & GitHub
-
-## Author
-- Duy – HCMUTE
-- GitHub: https://github.com/duy-hcmute
-
+```bash
+python student.py
